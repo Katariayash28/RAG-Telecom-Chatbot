@@ -1,4 +1,12 @@
-import os
+import streamlit as st
+from groq import Groq
+
+if st.sidebar.button("Test Groq"):
+    client = Groq(api_key=st.secrets["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"])
+    models = client.models.list()
+
+    st.write([model.id for model in models.data])
+    import os
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
 import streamlit as st
