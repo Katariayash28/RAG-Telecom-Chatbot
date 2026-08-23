@@ -43,7 +43,7 @@ def build_chain():
     ])
 
     llm = ChatGroq(
-        model="llama-3.1-8b-instant",
+        model="whisper-large-v3",
         temperature=0,
         max_tokens=None,
         timeout=None,
