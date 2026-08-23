@@ -1,5 +1,4 @@
-
-    import os
+import os
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
 import streamlit as st
