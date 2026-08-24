@@ -1,3 +1,24 @@
+from groq import Groq
+
+if st.sidebar.button("Test Groq"):
+    try:
+        client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+
+        response = client.chat.completions.create(
+            model="qwen/qwen3.6-27b",
+            messages=[
+                {
+                    "role": "user",
+                    "content": "Say exactly: Groq works"
+                }
+            ],
+            max_completion_tokens=50,
+        )
+
+        st.success(response.choices[0].message.content)
+
+    except Exception as e:
+        st.error(f"Groq test failed: {type(e).__name__}: {e}")
 import os
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
