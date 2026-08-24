@@ -271,15 +271,6 @@ Deploy Application
        ↓
 Public AI Chatbot
 ```
-
-### Live Demo
-
-🔗 **[Add your Streamlit deployment link here]**
-
-### GitHub Repository
-
-🔗 **[Add your GitHub repository link here]**
-
 ---
 
 ## 🔐 Security Considerations
