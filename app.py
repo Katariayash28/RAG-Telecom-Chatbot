@@ -1,3 +1,4 @@
+import streamlit as st
 from groq import Groq
 
 if st.sidebar.button("Test Groq"):
