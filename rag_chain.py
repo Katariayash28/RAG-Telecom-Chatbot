@@ -48,6 +48,7 @@ def build_chain():
         max_tokens=None,
         timeout=None,
         max_retries=2,
+      reasoning_effort="none",
     )
 
     chain = (
